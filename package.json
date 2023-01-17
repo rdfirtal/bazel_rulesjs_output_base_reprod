@@ -1,10 +1,6 @@
 {
-    "scripts": {
-        "dev": "vite dev app",
-        "build": "vite build app"
-    },
     "dependencies": {
-        "sweetalert": "^2.1.2",
-        "vite": "^4.0.4"
+        "vitepress": "1.0.0-alpha.38",
+        "vue": "^3.2.45"
     }
 }

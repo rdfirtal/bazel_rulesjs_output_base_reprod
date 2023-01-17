@@ -1,13 +1,9 @@
-load("@npm//:vite/package_json.bzl", builder = "bin")
+load("@npm//:vitepress/package_json.bzl", vitepress = "bin")
 
-builder.vite(
+vitepress.vitepress(
     name = "app",
-    srcs = [
-        "index.html", 
-        "main.js", 
-        "//:node_modules/sweetalert",
-    ],
+    srcs = [ "index.md", "//:node_modules/vue" ],
     args = ["build"],
     chdir = package_name(),
-    out_dirs = ["dist"],
+    out_dirs = [".vitepress/dist"],
 )
