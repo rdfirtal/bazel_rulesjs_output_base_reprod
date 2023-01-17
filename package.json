@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "dev": "vite dev app",
+        "build": "vite build app"
+    },
+    "dependencies": {
+        "sweetalert": "^2.1.2",
+        "vite": "^4.0.4"
+    }
+}

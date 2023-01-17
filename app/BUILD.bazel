@@ -1,0 +1,13 @@
+load("@npm//:vite/package_json.bzl", builder = "bin")
+
+builder.vite(
+    name = "app",
+    srcs = [
+        "index.html", 
+        "main.js", 
+        "//:node_modules/sweetalert",
+    ]+glob(["category/**/*"]),
+    args = ["build"],
+    chdir = package_name(),
+    out_dirs = ["dist"],
+)
