@@ -6,7 +6,7 @@ builder.vite(
         "index.html", 
         "main.js", 
         "//:node_modules/sweetalert",
-    ]+glob(["category/**/*"]),
+    ],
     args = ["build"],
     chdir = package_name(),
     out_dirs = ["dist"],
